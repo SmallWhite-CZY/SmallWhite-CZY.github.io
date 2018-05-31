@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>小白——电脑白痴的成长过程</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-05-31T09:47:55.145Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>CZY</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>my first blog</title>
+    <link href="http://yoursite.com/2018/05/30/hello-world/"/>
+    <id>http://yoursite.com/2018/05/30/hello-world/</id>
+    <published>2018-05-30T06:13:52.736Z</published>
+    <updated>2018-05-31T09:47:55.145Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to my blog.You can talk or help my ideas to more places where can help other people.<br>my email is in about tag,you can talk with me by it.</p><h2 id="My-knowledge-are-here"><a href="#My-knowledge-are-here" class="headerlink" title="My knowledge are here"></a>My knowledge are here</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">my present knowledge</span><br><span class="line">&lt;c/c++&gt; &lt;algorithm&gt;</span><br><span class="line">&lt;java se&gt; &lt;java ee&gt; </span><br><span class="line">&lt;Java Server Pages&gt;</span><br><span class="line">&lt;html/js/css&gt; &lt;3ds max&gt;</span><br><span class="line">&lt;database&gt;</span><br><span class="line">&lt;app build&gt;</span><br></pre></td></tr></table></figure><p>I will spend more time to make my knowledge adequate.</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;Welcome to my blog.You can talk or help my ideas to more places where can help other people.&lt;br&gt;my email is in about tag,you can talk wit
+      
+    
+    </summary>
+    
+      <category term="第一份博文" scheme="http://yoursite.com/categories/%E7%AC%AC%E4%B8%80%E4%BB%BD%E5%8D%9A%E6%96%87/"/>
+    
+    
+      <category term="study" scheme="http://yoursite.com/tags/study/"/>
+    
+  </entry>
+  
+</feed>
