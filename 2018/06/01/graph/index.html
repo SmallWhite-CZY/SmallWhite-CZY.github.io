@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next mist use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -89,7 +89,7 @@
 <meta property="og:site_name" content="小白——电脑白痴的成长过程">
 <meta property="og:description" content="准备ACM比赛的时候，懵逼的发现自己竟然不知道怎么求解图论的最短路径问题，至此开始，收集一系列有关图论的知识体系以及大部分题目，力争这段时间完成，在说图论之前，我们首先要知道图论的定义包含哪些。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-06-01T10:44:53.286Z">
+<meta property="og:updated_time" content="2018-06-02T04:31:03.577Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="图论基础知识(一)">
 <meta name="twitter:description" content="准备ACM比赛的时候，懵逼的发现自己竟然不知道怎么求解图论的最短路径问题，至此开始，收集一系列有关图论的知识体系以及大部分题目，力争这段时间完成，在说图论之前，我们首先要知道图论的定义包含哪些。">
@@ -100,7 +100,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Mist',
+    scheme: 'Pisces',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
     fancybox: true,
@@ -388,7 +388,7 @@
 
       
         <p>准备ACM比赛的时候，懵逼的发现自己竟然不知道怎么求解图论的最短路径问题，至此开始，收集一系列有关图论的知识体系以及大部分题目，力争这段时间完成，在说图论之前，我们首先要知道图论的定义包含哪些。<br><a id="more"></a></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">图由定点(vertex)的集V和边(edge)的集E组成。</span><br><span class="line">每一条边就是一幅点对(v,w)。</span><br><span class="line">如果点对是有序的，则图是有向的，又称为有向图。</span><br><span class="line">图中的一条路径是一个顶点序列：w1,w2,w3…wN是的(wi,wi+1)属于E。</span><br><span class="line">如果有一个顶点v到它自身的的边(v,v)，那么(v,v)也被称为环。</span><br><span class="line">如果一个无向图中从每个顶点到其他每个顶点都存在一条路径，则称无向图是连通的，又称为强连通的。</span><br><span class="line">如果一个有向图不是强连通的，但是它的基础图图是联通的，那么有向图称为弱连通的。</span><br><span class="line">完全图是其每一对顶点建都存在一条边的图。</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">图由定点(vertex)的集V和边(edge)的集E组成。</span><br><span class="line">每一条边就是一幅点对(v,w)。</span><br><span class="line">如果点对是有序的，则图是有向的，又称为有向图。</span><br><span class="line">图中的一条路径是一个顶点序列：w1,w2,w3…wN是的(wi,wi+1)属于E。</span><br><span class="line">如果有一个顶点v到它自身的的边(v,v)，那么(v,v)也被称为环。</span><br><span class="line">如果一个无向图中从每个顶点到其他每个顶点都存在一条路径，</span><br><span class="line">则称无向图是连通(也称强连通)。</span><br><span class="line">如果一个有向图不是强连通的，但是它的基础图图是联通的，那么有向图称为弱连通的。</span><br><span class="line">完全图是其每一对顶点建都存在一条边的图。</span><br></pre></td></tr></table></figure>
 <p>紧接着就是图论有关算法涉及到的大多数定理了。稍微从各大网站还有大佬们的博客上爬虫下来的相关信息，了解到了主要有关图论的acm知识点，我以接下来的55点介绍，不一定能完全覆盖，但是大多数常考理论也都在里面涉及，相关算法方面，我也会在随后的一段时间里扩充。</p>
 <blockquote>
 <ol>
@@ -807,6 +807,13 @@
 
   
   
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
 
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
