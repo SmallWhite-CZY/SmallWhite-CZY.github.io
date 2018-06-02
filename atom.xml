@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>小白</title>
+  <title>SmallWhite</title>
   
   <subtitle>电脑白痴的成长过程</subtitle>
   <link href="/atom.xml" rel="self"/>
@@ -34,9 +34,9 @@
       <category term="算法" scheme="http://yoursite.com/categories/%E7%AE%97%E6%B3%95/"/>
     
     
-      <category term="algorithm" scheme="http://yoursite.com/tags/algorithm/"/>
-    
       <category term="c/c++" scheme="http://yoursite.com/tags/c-c/"/>
+    
+      <category term="algorithm" scheme="http://yoursite.com/tags/algorithm/"/>
     
       <category term="Graph Theory" scheme="http://yoursite.com/tags/Graph-Theory/"/>
     
@@ -60,9 +60,9 @@
       <category term="c/c++" scheme="http://yoursite.com/categories/c-c/"/>
     
     
-      <category term="c/c++" scheme="http://yoursite.com/tags/c-c/"/>
-    
       <category term="编程" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="c/c++" scheme="http://yoursite.com/tags/c-c/"/>
     
   </entry>
   
@@ -132,9 +132,9 @@
       <category term="c/c++" scheme="http://yoursite.com/categories/c-c/"/>
     
     
-      <category term="c/c++" scheme="http://yoursite.com/tags/c-c/"/>
-    
       <category term="编程" scheme="http://yoursite.com/tags/%E7%BC%96%E7%A8%8B/"/>
+    
+      <category term="c/c++" scheme="http://yoursite.com/tags/c-c/"/>
     
   </entry>
   
