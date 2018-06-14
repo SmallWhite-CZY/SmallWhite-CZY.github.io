@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="algorithm,c/c++,Graph Theory," />
 
 
 
@@ -81,17 +81,18 @@
 
 
 
-<meta name="description" content="即使一点点的白色，也能改变世界的看法">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta name="description" content="此内容包括图论最短路径的五道题目(比较经典，这里只举出其中一例)。不得不说，csdn里面总是有很多大神善于总结，从他们那边了解到了具体准备ACM应该从哪些层面准备，以及相应的准备方法。图论中最长见到的就是最短路径的题目了，因此主要的题目我也在这里阐明.">
+<meta name="keywords" content="algorithm,c&#x2F;c++,Graph Theory">
+<meta property="og:type" content="article">
+<meta property="og:title" content="图论基础知识(三)">
+<meta property="og:url" content="http://yoursite.com/2018/06/14/7/index.html">
 <meta property="og:site_name" content="SmallWhite">
-<meta property="og:description" content="即使一点点的白色，也能改变世界的看法">
+<meta property="og:description" content="此内容包括图论最短路径的五道题目(比较经典，这里只举出其中一例)。不得不说，csdn里面总是有很多大神善于总结，从他们那边了解到了具体准备ACM应该从哪些层面准备，以及相应的准备方法。图论中最长见到的就是最短路径的题目了，因此主要的题目我也在这里阐明.">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-31T05:30:12.000Z">
+<meta property="og:updated_time" content="2018-06-02T13:27:06.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="即使一点点的白色，也能改变世界的看法">
+<meta name="twitter:title" content="图论基础知识(三)">
+<meta name="twitter:description" content="此内容包括图论最短路径的五道题目(比较经典，这里只举出其中一例)。不得不说，csdn里面总是有很多大神善于总结，从他们那边了解到了具体准备ACM应该从哪些层面准备，以及相应的准备方法。图论中最长见到的就是最短路径的题目了，因此主要的题目我也在这里阐明.">
 
 
 
@@ -121,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/14/7/"/>
 
 
 
 
 
-  <title>tags | SmallWhite</title>
+  <title>图论基础知识(三) | SmallWhite</title>
   
 
 
@@ -285,40 +286,189 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/14/7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CZY">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/smallwhite.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SmallWhite">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">tags</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 7 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/Graph-Theory/" style="font-size: 21px; color: #6f6f6f">Graph Theory</a> <a href="/tags/algorithm/" style="font-size: 30px; color: #111">algorithm</a> <a href="/tags/c-c/" style="font-size: 30px; color: #111">c/c++</a> <a href="/tags/java/" style="font-size: 12px; color: #ccc">java</a> <a href="/tags/study/" style="font-size: 25.5px; color: #404040">study</a> <a href="/tags/大数据/" style="font-size: 12px; color: #ccc">大数据</a> <a href="/tags/编程/" style="font-size: 16.5px; color: #9d9d9d">编程</a>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">图论基础知识(三)</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-14T22:01:19+08:00">
+                2018-06-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/算法/" itemprop="url" rel="index">
+                    <span itemprop="name">算法</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>此内容包括图论最短路径的五道题目(比较经典，这里只举出其中一例)。<br>不得不说，csdn里面总是有很多大神善于总结，从他们那边了解到了具体准备ACM应该从哪些层面准备，以及相应的准备方法。图论中最长见到的就是最短路径的题目了，因此主要的题目我也在这里阐明.<br><a id="more"></a></p>
+<h2 id="题目列表"><a href="#题目列表" class="headerlink" title="题目列表"></a>题目列表</h2><p>题目主要取自于poj上的题目，详情可以参考这位大佬的博客链接<br><a href="https://blog.csdn.net/u013752495/article/details/49009947" target="_blank" rel="noopener">https://blog.csdn.net/u013752495/article/details/49009947</a><br>对应poj题目<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">poj1125 Stockbroker Grapevine</span><br><span class="line">poj3615 Cow Hurdles</span><br><span class="line">poj1847 Tram</span><br><span class="line">poj1502 MPI Maelstrom</span><br><span class="line">poj1860 Currency Exchange</span><br></pre></td></tr></table></figure></p>
+<p>我以第二个为例子说明一下<br>题目如下:</p>
+<h3 id="Description"><a href="#Description" class="headerlink" title="Description"></a>Description</h3><blockquote>
+<p>Farmer John 想让她的奶牛准备郡级跳跃比赛，贝茜和她的伙伴们正在练习跨栏。她们很累，所以她们想消耗最少的能量来跨栏。 显然，对于一头奶牛跳过几个矮栏是很容易的，但是高栏却很难。于是，奶牛们总是关心路径上最高的栏的高度。 奶牛的训练场中有 N (1 ≤ N ≤ 300) 个站台，分别标记为1..N。所有站台之间有M (1 ≤ M ≤ 25,000)条单向路径，第i条路经是从站台Si开始，到站台Ei，其中最高的栏的高度为Hi (1 ≤ Hi ≤ 1,000,000)。无论如何跑，奶牛们都要跨栏。 奶牛们有 T (1 ≤ T ≤ 40,000) 个训练任务要完成。第 i 个任务包含两个数字 Ai 和 Bi (1 ≤ Ai ≤ N; 1 ≤ Bi ≤ N)，表示奶牛必须从站台Ai跑到站台Bi，可以路过别的站台。奶牛们想找一条路径从站台Ai到站台Bi，使路径上最高的栏的高度最小。 你的任务就是写一个程序，计算出路径上最高的栏的高度的最小值。</p>
+</blockquote>
+<h3 id="Input"><a href="#Input" class="headerlink" title="Input"></a>Input</h3><blockquote>
+<p>行 1: 两个整数 N, M, T<br>行2..M+1: 行 i+1 包含三个整数 Si , Ei , Hi 行 M+2..M+T+1: 行 i+M+1 包含两个整数，表示任务i的起始站台和目标站台: Ai , Bi</p>
+</blockquote>
+<h3 id="Output"><a href="#Output" class="headerlink" title="Output"></a>Output</h3><blockquote>
+<p>行 1..T: 行 i 为一个整数，表示任务i路径上最高的栏的高度的最小值。如果无法到达，输出 -1。 </p>
+</blockquote>
+<h3 id="Sample-Input"><a href="#Sample-Input" class="headerlink" title="Sample Input"></a>Sample Input</h3><p>5 6 3<br>1 2 12<br>3 2 8<br>1 3 5<br>2 5 3<br>3 4 4<br>2 4 8<br>3 4<br>1 2<br>5 1</p>
+<h3 id="Sample-Output"><a href="#Sample-Output" class="headerlink" title="Sample Output"></a>Sample Output</h3><p>4<br>8<br>-1</p>
+<p>首先附上代码，仅供参考：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;cstdio&gt;</span><br><span class="line">#include&lt;cstring&gt;</span><br><span class="line">#include&lt;algorithm&gt;</span><br><span class="line">using namespace std;</span><br><span class="line">int n,m,t;</span><br><span class="line">int a[305][305]; </span><br><span class="line">int main()&#123;</span><br><span class="line">   #ifdef LOCAL</span><br><span class="line">   /*freopen(&quot;in.txt&quot;,&quot;r&quot;,stdin);</span><br><span class="line">   freopen(&quot;out.txt&quot;,&quot;w&quot;,stdout);*/</span><br><span class="line">   #endif</span><br><span class="line">   scanf(&quot;%d%d%d&quot;,&amp;n,&amp;m,&amp;t);</span><br><span class="line">   memset(a,0x3f,sizeof a);</span><br><span class="line">   for(int i=0,x,y,z;i&lt;m;i++)&#123;</span><br><span class="line">       scanf(&quot;%d%d%d&quot;,&amp;x,&amp;y,&amp;z);</span><br><span class="line">       a[x][y]=min(a[x][y],z);</span><br><span class="line">   &#125;</span><br><span class="line">   for(int k=1;k&lt;=n;k++)&#123;</span><br><span class="line">       for(int i=1;i&lt;=n;i++)&#123;</span><br><span class="line">           for(int j=1;j&lt;=n;j++)&#123;</span><br><span class="line">               a[i][j]=min(a[i][j],max(a[i][k],a[k][j]));</span><br><span class="line">           &#125;</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   for(int i=0,x,y;i&lt;t;i++)&#123;</span><br><span class="line">       scanf(&quot;%d%d&quot;,&amp;x,&amp;y);</span><br><span class="line">       printf(&quot;%d\n&quot;,a[x][y]==0x3f3f3f3f?-1:a[x][y]);</span><br><span class="line">   &#125;</span><br><span class="line">   return 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="题解"><a href="#题解" class="headerlink" title="题解"></a>题解</h3><blockquote>
+<p>其实本体就是folyd算法的变形，从数学来说，就是例题的变式一样，主要就是 给你一个有向图,然后对于特定的点A与B,要你求出A到B之间所有可行路径的单段路距离最大值的最小值.<br>剥除floyd的外壳，本题d[i][j]表示的是从i到j的所有路径中单段路距离最大值的最小值。所以其实本题还是依据动态规划的思想来做的，这里<br><code>d[i][j]=min(d[i][j],max(d[i][k],d[k][j]));</code><br>当不同类d[i][k]和d[k][j]合并的时候，取得是max(最大值，因为我们要求i到j这段路内的最大值)。然后当同类路径值(即两个d[i][j]可行值)选优时，取得是最小值(因为我们要求所有i到j路径目的值中的最小值)。</p>
+</blockquote>
+<p>从上题中我们看到了，凡是最大中最小值的，亦或是最小值中的最大值，都可以使用DP的思想解决，DP也是这段时间必须攻克的地方。</p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/algorithm/" rel="tag"><i class="fa fa-tag"></i> algorithm</a>
+          
+            <a href="/tags/c-c/" rel="tag"><i class="fa fa-tag"></i> c/c++</a>
+          
+            <a href="/tags/Graph-Theory/" rel="tag"><i class="fa fa-tag"></i> Graph Theory</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/06/14/8/" rel="prev" title="图论基础知识(四)">
+                图论基础知识(四) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -351,8 +501,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -463,6 +622,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#题目列表"><span class="nav-number">1.</span> <span class="nav-text">题目列表</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Description"><span class="nav-number">1.1.</span> <span class="nav-text">Description</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Input"><span class="nav-number">1.2.</span> <span class="nav-text">Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Output"><span class="nav-number">1.3.</span> <span class="nav-text">Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Input"><span class="nav-number">1.4.</span> <span class="nav-text">Sample Input</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Sample-Output"><span class="nav-number">1.5.</span> <span class="nav-text">Sample Output</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#题解"><span class="nav-number">1.6.</span> <span class="nav-text">题解</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

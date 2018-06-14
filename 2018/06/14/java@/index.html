@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="study,java," />
 
 
 
@@ -81,17 +81,18 @@
 
 
 
-<meta name="description" content="即使一点点的白色，也能改变世界的看法">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+<meta name="description" content="java中的注解，java提供了一套机制，使得我们可以对方法、类、参数、包、域以及变量等添加标准(即附上某些信息)。且在以后某个时段通过反射将标注的信息提取出来以供使用。">
+<meta name="keywords" content="study,java">
+<meta property="og:type" content="article">
+<meta property="og:title" content="有关java中@的代指--注解">
+<meta property="og:url" content="http://yoursite.com/2018/06/14/java@/index.html">
 <meta property="og:site_name" content="SmallWhite">
-<meta property="og:description" content="即使一点点的白色，也能改变世界的看法">
+<meta property="og:description" content="java中的注解，java提供了一套机制，使得我们可以对方法、类、参数、包、域以及变量等添加标准(即附上某些信息)。且在以后某个时段通过反射将标注的信息提取出来以供使用。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-31T05:30:12.000Z">
+<meta property="og:updated_time" content="2018-06-01T05:50:58.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="即使一点点的白色，也能改变世界的看法">
+<meta name="twitter:title" content="有关java中@的代指--注解">
+<meta name="twitter:description" content="java中的注解，java提供了一套机制，使得我们可以对方法、类、参数、包、域以及变量等添加标准(即附上某些信息)。且在以后某个时段通过反射将标注的信息提取出来以供使用。">
 
 
 
@@ -121,13 +122,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/tags/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/06/14/java@/"/>
 
 
 
 
 
-  <title>tags | SmallWhite</title>
+  <title>有关java中@的代指--注解 | SmallWhite</title>
   
 
 
@@ -285,40 +286,191 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/06/14/java@/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CZY">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/smallwhite.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="SmallWhite">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">tags</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 7 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/Graph-Theory/" style="font-size: 21px; color: #6f6f6f">Graph Theory</a> <a href="/tags/algorithm/" style="font-size: 30px; color: #111">algorithm</a> <a href="/tags/c-c/" style="font-size: 30px; color: #111">c/c++</a> <a href="/tags/java/" style="font-size: 12px; color: #ccc">java</a> <a href="/tags/study/" style="font-size: 25.5px; color: #404040">study</a> <a href="/tags/大数据/" style="font-size: 12px; color: #ccc">大数据</a> <a href="/tags/编程/" style="font-size: 16.5px; color: #9d9d9d">编程</a>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">有关java中@的代指--注解</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-06-14T22:01:19+08:00">
+                2018-06-14
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/JAVA-SE/" itemprop="url" rel="index">
+                    <span itemprop="name">JAVA SE</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>java中的注解，java提供了一套机制，使得我们可以对方法、类、参数、包、域以及变量等添加标准(即附上某些信息)。且在以后某个时段通过反射将标注的信息提取出来以供使用。<br><a id="more"></a></p>
+<h2 id="什么是java注解"><a href="#什么是java注解" class="headerlink" title="什么是java注解"></a>什么是java注解</h2><blockquote>
+<p> 注解，顾名思义，注解,就是对某一事物进行添加注释说明，会存放一些信息，这些信息可能对以后某个时段来说是很有用处的。<br> Java注解又叫java标注，java提供了一套机制，使得我们可以对方法、类、参数、包、域以及变量等添加标准(即附上某些信息)。且在以后某个时段通过反射将标注的信息提取出来以供使用。</p>
+</blockquote>
+<h2 id="自定义Java标注"><a href="#自定义Java标注" class="headerlink" title="自定义Java标注"></a>自定义Java标注</h2><h3 id="为什么要自定义注解"><a href="#为什么要自定义注解" class="headerlink" title="为什么要自定义注解"></a>为什么要自定义注解</h3><blockquote>
+<p>  Java从1.5版本以后默认内置三个标注：<br>Ø @Override:只能用在方法之上的，用来告诉别人这一个方法是改写父类的。<br>Ø @Deprecated:建议别人不要使用旧的API的时候用的,编译的时候会用产生警告信息,可以设定在程序里的所有的元素上.<br>Ø @SuppressWarnings:这一个类型可以来暂时把一些警告信息消息关闭.<br>但是，仅仅这三个标注是不能满足我们开发时一些需求的。所以java允许我们自定义注解来使用。</p>
+</blockquote>
+<h3 id="如何自定义注解"><a href="#如何自定义注解" class="headerlink" title="如何自定义注解"></a>如何自定义注解</h3><blockquote>
+<p>自定义步骤大致分为两步：<br>  1通过@interface关键字(注意，不是interface，是@interace)声明注解名称，以及注解的成员属性或者叫做注解的参数。<br>  2使用java内置的四个元注解对这个自定义标注的功能和范围进行一些限制<br>问题来了，什么是元注解？</p>
+</blockquote>
+<h3 id="什么是元注解"><a href="#什么是元注解" class="headerlink" title="什么是元注解"></a>什么是元注解</h3><blockquote>
+<p>元注解，就是定义注解的注解，也就是说这些元注解是的作用就是专门用来约束其它注解的注解。请区别上面那三个注解，他们也是通过元注解定义而来的。<br>元注解有哪些呢，主要有四个@Target,@Retention,@Documented,@Inherited？<br>元注解有：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">@Target,@Retention,@Documented,@Inherited </span><br><span class="line">@Target 表示该注解用于什么地方，可能的 ElemenetType 参数包括： </span><br><span class="line">ElemenetType.CONSTRUCTOR 构造器声明 </span><br><span class="line">ElemenetType.FIELD 域声明（包括 enum 实例） </span><br><span class="line">ElemenetType.LOCAL_VARIABLE 局部变量声明 </span><br><span class="line">ElemenetType.METHOD 方法声明 </span><br><span class="line">ElemenetType.PACKAGE 包声明 </span><br><span class="line">ElemenetType.PARAMETER 参数声明 </span><br><span class="line">ElemenetType.TYPE 类，接口（包括注解类型）或enum声明  </span><br><span class="line">@Retention 表示在什么级别保存该注解信息。可选的 RetentionPolicy 参数包括： </span><br><span class="line">RetentionPolicy.SOURCE 注解将被编译器丢弃 </span><br><span class="line">RetentionPolicy.CLASS 注解在class文件中可用，但会被VM丢弃 </span><br><span class="line">RetentionPolicy.RUNTIME VM将在运行期也保留注释，因此可以通过反射机制读取注解的信息。   </span><br><span class="line">@Documented 将此注解包含在 javadoc 中 </span><br><span class="line">@Inherited 允许子类继承父类中的注解</span><br></pre></td></tr></table></figure>
+<h3 id="自定义及使用注解示例"><a href="#自定义及使用注解示例" class="headerlink" title="自定义及使用注解示例"></a>自定义及使用注解示例</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">//自定义一个类级别的标注Description </span><br><span class="line">package lighter.javaeye.com;</span><br><span class="line">import java.lang.annotation.Documented;</span><br><span class="line">import java.lang.annotation.ElementType;</span><br><span class="line">import java.lang.annotation.Retention;</span><br><span class="line">import java.lang.annotation.RetentionPolicy;</span><br><span class="line">import java.lang.annotation.Target;</span><br><span class="line">@Target(ElementType.TYPE)//这个标注应用于类</span><br><span class="line">@Retention(RetentionPolicy.RUNTIME)//标注会一直保留到运行时</span><br><span class="line">@Documented//将此注解包含在javadoc中</span><br><span class="line">public @interface Description &#123;</span><br><span class="line">String value();</span><br><span class="line">&#125; </span><br><span class="line">再定义个方法级别的注解Name</span><br><span class="line">package lighter.javaeye.com;</span><br><span class="line">import java.lang.annotation.Documented;</span><br><span class="line">import java.lang.annotation.ElementType;</span><br><span class="line">import java.lang.annotation.Retention;</span><br><span class="line">import java.lang.annotation.RetentionPolicy;</span><br><span class="line">import java.lang.annotation.Target; </span><br><span class="line">//注意这里的@Target与@Description里的不同,参数成员也不同</span><br><span class="line">@Target(ElementType.METHOD)</span><br><span class="line">@Retention(RetentionPolicy.RUNTIME)</span><br><span class="line">@Documented</span><br><span class="line">public @interface Name &#123;</span><br><span class="line">String originate();</span><br><span class="line">String community();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>   然后使用以上两个注解<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">package lighter.javaeye.com; </span><br><span class="line">  @Description(value=&quot;javaeye,做最棒的软件开发交流社区&quot;)</span><br><span class="line">  public class JavaEyer &#123;</span><br><span class="line">  @Name(originate=&quot;创始人:robbin&quot;,community=&quot;javaEye&quot;)</span><br><span class="line">  public String getName()</span><br><span class="line">  &#123;</span><br><span class="line">     return null;</span><br><span class="line">  &#125;        </span><br><span class="line">  @Name(originate=&quot;创始人:江南白衣&quot;,community=&quot;springside&quot;)</span><br><span class="line">  public String getName2()</span><br><span class="line">  &#123;</span><br><span class="line">     return &quot;借用两位的id一用,写这一个例子,请见谅!&quot;;</span><br><span class="line">  &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p>
+<p><strong>说明：其中标注“@Description(value=”javaeye,做最棒的软件开发交流社区”)”，可以写成“@Description(“javaeye,做最棒的软件开发交流社区”) ”，结果也是一样的。因为Description标注定义的时候其参数(或者说属性)为value。而value比较特殊，它在被指定参数的时候可以不用显示的写出来。当然如果定义的时候参数名不是value而是其它的比如des，那么使用注解的时候，必须显示写出参数名，然后再赋值：@Description(Des=”xxx”)</strong><br>提取出注解的信息<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br></pre></td><td class="code"><pre><span class="line"> package lighter.javaeye.com; </span><br><span class="line"> import java.lang.reflect.Method;</span><br><span class="line"> import java.util.HashSet;</span><br><span class="line"> import java.util.Set;</span><br><span class="line"> public class TestAnnotation &#123;</span><br><span class="line">   /*** author lighter* 说明:具体关天Annotation的API的用法请参见javaDoc文档*/</span><br><span class="line">  public static void main(String[] args) throws Exception &#123;</span><br><span class="line">   String CLASS_NAME = &quot;lighter.javaeye.com.JavaEyer&quot;;</span><br><span class="line">   Class test = Class.forName(CLASS_NAME);</span><br><span class="line">   Method[] method = test.getMethods();</span><br><span class="line">   boolean flag = test.isAnnotationPresent(Description.class);</span><br><span class="line">  if(flag)</span><br><span class="line">  &#123;</span><br><span class="line">   Description des = (Description)test.getAnnotation(Description.class);</span><br><span class="line">   System.out.println(&quot;描述:&quot;+des.value());</span><br><span class="line">   System.out.println(&quot;-----------------&quot;);</span><br><span class="line">  &#125;</span><br><span class="line">   //把JavaEyer这一类有利用到@Name的全部方法保存到Set中去</span><br><span class="line">   Set&lt;Method&gt; set = new HashSet&lt;Method&gt;();</span><br><span class="line">   for(int i=0;i&lt;method.length;i++)</span><br><span class="line">   &#123;</span><br><span class="line">   boolean otherFlag = method[i].isAnnotationPresent(Name.class);</span><br><span class="line">   if(otherFlag) set.add(method[i]);</span><br><span class="line">   &#125;</span><br><span class="line">   for(Method m: set)</span><br><span class="line">   &#123;</span><br><span class="line">   Name name = m.getAnnotation(Name.class);</span><br><span class="line">   System.out.println(name.originate());</span><br><span class="line">   System.out.println(&quot;创建的社区:&quot;+name.community());</span><br><span class="line">   &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><blockquote>
+<p>所有的Annotation会自动继承java.lang.annotation这一个接口,所以不能再去继承别的类或是接口.<br>   最重要的一点,Annotation类型里面的参数该怎么设定:<br>   第一,只能用public或默认(default)这两个访问权修饰.例如,String value();这里把方法设为defaul默认类型.<br>   第二,参数成员只能用基本类型byte,short,char,int,long,float,double,boolean八种基本数据类型和String,Enum,Class,annotations等数据类型,以及这一些类型的数组.例如,String value();这里的参数成员就为String.</p>
+</blockquote>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/study/" rel="tag"><i class="fa fa-tag"></i> study</a>
+          
+            <a href="/tags/java/" rel="tag"><i class="fa fa-tag"></i> java</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/14/hello-world/" rel="next" title="my first blog">
+                <i class="fa fa-chevron-left"></i> my first blog
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/06/14/second/" rel="prev" title="动态规划详解">
+                动态规划详解 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
@@ -351,8 +503,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -463,6 +624,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#什么是java注解"><span class="nav-number">1.</span> <span class="nav-text">什么是java注解</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#自定义Java标注"><span class="nav-number">2.</span> <span class="nav-text">自定义Java标注</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#为什么要自定义注解"><span class="nav-number">2.1.</span> <span class="nav-text">为什么要自定义注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#如何自定义注解"><span class="nav-number">2.2.</span> <span class="nav-text">如何自定义注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#什么是元注解"><span class="nav-number">2.3.</span> <span class="nav-text">什么是元注解</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#自定义及使用注解示例"><span class="nav-number">2.4.</span> <span class="nav-text">自定义及使用注解示例</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#注意事项"><span class="nav-number">3.</span> <span class="nav-text">注意事项</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
