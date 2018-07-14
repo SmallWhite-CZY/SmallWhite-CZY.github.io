@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Linux图形界面问题]]></title>
+    <url>%2F2018%2F07%2F14%2FLinux_01%2F</url>
+    <content type="text"><![CDATA[有两种情况，不过我遇到的是第二种情况，开始试了很多办法包括什么startx这样的命令并没有什么反应后来发现不是命令问题，是自己并没有安装相关的组件，解决方法如下： 第一种：VMware的版本过低不支持 对centOS7的支持不够VMware解决办法很简单，下载最新版的VMware workstations 14 pro，对centOS7完美支持，虚拟机安装完成后即出现图形界面 第二种：安装时没有安装图形界面安装centos服务器版本的时候，系统默认没安装CentOS的图形界面程序，解决方案如下： 在命令行下输入下面的命令来安装Gnome包 1$sudo yum groupinstall &quot;GNOME Desktop&quot; &quot;Graphical Administration Tools&quot; 更新系统的运行级别 如果你想在系统下次启动的时候自动进入图形界面，那么我们需要更改系统的运行级别，输入下面的命令来启用图形界面。 1$sudo ln -sf /lib/systemd/system/runlevel5.target /etc/systemd/system/default.target 重启系统1当系统再次启动的时候，就会默认进入图形界面。]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>study</tag>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Linux的小命令]]></title>
+    <url>%2F2018%2F07%2F14%2FLinux%2F</url>
+    <content type="text"><![CDATA[稍微介绍一下Linux的文件修改和文件保存的相关命令吧，以防自己长时间不用也记不得了。 修改文件如果是使用普通用户登录的，需要先切换到管理员用户，打开终端，输入：su，接着按提示输入密码即可；然后使用命令进入需要修改文件的所在目录，常用的几个命令如下： ① cd + 目录名 ② cd + 空格（退回上级目录） ③ cd + 空格 + /（退回最高级目录） 接着使用命令：vi + 文件名命令，打开文件，然后输入命令：/ + 要修改的关键词，查找到要修改的内容，然后使用命令进入【文本输入模式】，常用的命令如下： ① a 在光标之后开始输入文本② A 在行尾开始输入文本③ i 在光标之前开始输入文本④ I 在行首第一个非空白字符前输入文本⑤ o 在光标所在行后插入一空行⑥ O 在光标所在行前插入一空行 保存退出修改好文件后，如果在【文本输入模式】下，首先按“ESC” 键进入【命令模式】，然后输入“:”，进入【末行模式】，在末行模式下，可使用如下退出命令： ① q 是直接退出； ② wq 保存后退出； ③ q! 强制退出； ④ wq! 强制保存退出；]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>study</tag>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[有关Linux的yum错误]]></title>
+    <url>%2F2018%2F07%2F14%2Flinux_error1%2F</url>
+    <content type="text"><![CDATA[近日因为电脑重置，又得重新配置自己的虚拟机，好不容易才把各个环境配好，才发现还有虚拟机要配置，接下来看到的就是我在命令模式下出现的状况了，原谅是第一次遇见，只好慢慢查找哪里出错了，如果也是yum命令后显示fastestmirror这样的错误信息，也可以按照以上方法解决。 首先错误显示信息如下：1234[root@localhost ~]# yum install lrzszLoaded plugins: fastestmirrorCould not retrieve mirrorlist http://mirrorlist.centos.org/?release=7&amp;arch=x86_64&amp;repo=os&amp;infra=stock error was14: curl#6 - &quot;Could not resolve host: mirrorlist.centos.org; Unknown error&quot; … 第一步：输入命令1[root@localhost ~]# vi /etc/yum/pluginconf.d/ 12345678910111213fastestmirror.conf [main]enabled=1//把1改为0 verbose=0always_print_best_host = truesocket_timeout=3#Relative paths are relative to the cachedir (and so works for users as well#as root).hostfilepath=timedhosts.txtmaxhostfileage=10maxthreads=15#exclude=.gov, facebook#include_only=.nl,.de,.uk,.ie 第二步：输入命令1[root@localhost ~]# vi /etc/yum.conf 1234567891011121314151617181920212223[main]cachedir=/var/cache/yum/$basearch/$releaseverkeepcache=0debuglevel=2logfile=/var/log/yum.logexactarch=1obsoletes=1gpgcheck=1plugins=1//将plugins的值修改为0installonly_limit=5bugtracker_url=http://bugs.centos.org/set_project.php?project_id=23&amp;ref=http://bugs.centos.org/bug_report_page.php?category=yumdistroverpkg=centos-release# This is the default, if you make this bigger yum won&apos;t see if the metadata# is newer on the remote and so you&apos;ll &quot;gain&quot; the bandwidth of not having to# download the new metadata and &quot;pay&quot; for it by yum not having correct# information.# It is esp. important, to have correct metadata, for distributions like# Fedora which don&apos;t keep old packages around. If you don&apos;t like this checking# interupting your command line usage, it&apos;s much better to have something# manually check the metadata once an hour (yum-updatesd will do this).# metadata_expire=90m# PUT YOUR REPOS HERE OR IN separate files named file.repo# in /etc/yum.repos.d 继续运行，出现如下错误 1[root@localhost ~]# yum install lrzsz 12345678910111213141516171819202122232425Could not retrieve mirrorlist http://mirrorlist.centos.org/?release=7&amp;arch=x86_64&amp;repo=os&amp;infra=stock error was14: curl#6 - &quot;Could not resolve host: mirrorlist.centos.org; Unknown error&quot; One of the configured repositories failed (Unknown), and yum doesn&apos;t have enough cached data to continue. At this point the only safe thing yum can do is fail. There are a few ways to work &quot;fix&quot; this: 1. Contact the upstream for the repository and get them to fix the problem. 2. Reconfigure the baseurl/etc. for the repository, to point to a working upstream. This is most often useful if you are using a newer distribution release than is supported by the repository (and the packages for the previous distribution release still work). 3. Run the command with the repository temporarily disabled yum --disablerepo=&lt;repoid&gt; ... 4. Disable the repository permanently, so yum won&apos;t use it by default. Yum will then just ignore the repository until you permanently enable it again or use --enablerepo for temporary usage: yum-config-manager --disable &lt;repoid&gt; or subscription-manager repos --disable=&lt;repoid&gt; 5. Configure the failing repository to be skipped, if it is unavailable. Note that yum will try to contact the repo. when it runs most commands, so will have to try and fail each time (and thus. yum will be be much slower). If it is a very temporary problem though, this is often a nice compromise: yum-config-manager --save --setopt=&lt;repoid&gt;.skip_if_unavailable=trueCannot find a valid baseurl for repo: base/7/x86_64 原因：没有配置resolv.conf解决方法:到/etc目录下配置resolv.conf加入nameserver IP,如：[root@localhost ~]# vi /etc/resolv.confnameserver 8.8.8.8nameserver 8.8.4.4search localdomain保存再次运行命令就可以]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>study</tag>
+        <tag>Linux</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[暑假来咯]]></title>
     <url>%2F2018%2F07%2F12%2Fsummer%2F</url>
     <content type="text"><![CDATA[不知不觉的时候，学校的考试都已经结束了，想着自己也忙了很久来准备期末考试，假期放的晚，望下手表，都快7月中旬了，天气也都开始热起来了。时间还真是不等人啊，看着自己一点点从大一，现在都已经是大三的人了，说着自己学了很多，但还是一知半解的多，真正弄明白的，自己又有多少可以拿出来呢，回头望望，至少最后两年不能乱混吧，多花点心思，弄弄自己想弄得，也许才是现在我该做的，2018年也就要结束了，虽说还有半年，不过我能学新技术的时间，也就这半年了吧，后续的时光，怕是要留在考研的路上了。说着说着，好像这个暑假还蛮重要的，抓抓时间，能不能抓住这个暑假的尾巴，估计还得看看自己有没有这个水平了，话不多说，总结一下自己暑假需要准备学习的东西。 首先嘛，作为学生，该学习的东西肯定是要有的。列举一下我接下来参加的很多事项。九月份的数学建模，十月份的信息安全，十一月份的软考，老师的一些项目也是需要这段时间完成的。在看看自己现在有的时间，还真是少了很多呢，要把这么多事情都提前准备好，这个假期看来要学很多技术了，简单的来说java还有python这两块，我还得好好学会，顺便大数据相关的技术，看来不能像以前那样到处鬼混，首先不能急躁自己学的内容很多，其实对于自己来说，仅仅只是把现有的水平进一步拔高而已。 接着说说11月份的软考，很多人说过为啥不参加那个计算机等级考试呢，我也好好考虑过，时间上确实是太紧张了，而且本身就是学习计算机的专业，对这个内容，并没有很大的憧憬和希望，相对来说自己依然觉得软考更加重要一些。但是毕竟11月份，总会让自己倦怠的，所以第一步要让自己能够坚持下去，过程也许有点枯燥，但是明年要坚持一年半的考验，好像才会更加重要了一些，偶尔自己列一个清单，还会发现，自己要做的事情有很多很多，但我们总需要筛选这些我们可以优先完成，又十分重要的事情，接下来的不管多么繁琐，终归能让自己好好专心克服那其中一项，只有这样，也许自己才会慢慢成长吧。 看过很多书籍，看过很多世界，你才有成长的可能，感悟体察这些都是经验才能让你成熟，最基础的，便是天赋和努力了，简明扼要一下，暑假还是很值得自己付出的，即使自己一段时间是苦的吧。 不过，换一台电脑，转移博客还真的是相当麻烦啊。]]></content>
@@ -91,8 +127,8 @@
         <category>算法</category>
       </categories>
       <tags>
-        <tag>study</tag>
         <tag>algorithm</tag>
+        <tag>study</tag>
       </tags>
   </entry>
   <entry>
